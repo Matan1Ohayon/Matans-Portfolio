@@ -38,7 +38,7 @@
 
 
   #hello_name{
-    font-size: 6em;
+    font-size: 6rem;
   }
 
   .profile-image {
@@ -63,19 +63,52 @@
   }
 
   .projects{
-    width: 90%
+    width: 90%;
+    justify-content: center;
   }
 
   #projects_id{
     height: 45px;
   }
 
-  .project_view{
-    height: 325px;
+  .projects_grid{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    }
+
+  .col_{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    max-width: max-content;
   }
 
-  .card-body .container_{
-    gap: 10px;
+  .card_{
+    border: 1px solid gray;
+    padding: 1em;
+    border-radius: 2%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .project_view{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .card_ p{
+    font-size: small;
+  }
+
+
+  .card_ .container_{
+    gap: 15px;
     flex-wrap: wrap;
   }
 
@@ -108,10 +141,6 @@
     padding-bottom: 10px;
   }
 
-  #contact_id{
-    height: 45px;
-  }
-
 .container_{
   display: flex;
   padding: 10px;
@@ -121,6 +150,15 @@
   gap: 25px;
 }
 
+.container_col{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  justify-content: center;
+  gap: 25px;
+}
 
 .contact_item{
   color: black;
@@ -131,25 +169,17 @@
   transform: scale(1.1);
 }
 
-.col_{
-  display: flex;
-  flex-direction: column;
-}
-
 .row_{
   display: flex;
   flex-direction: row;
-}
-
-.message-box #messageForm{
-  display: flex;
-  flex-direction: column;
 }
 
 footer{
   background-color: #becfe2;
   padding: 20px;
 }
+
+/* font */
 
 .poppins-light {
     font-family: "Poppins", serif;
@@ -169,6 +199,9 @@ footer{
     font-style: normal;
   }
 
+
+  /* scroll bar */
+
   ::-webkit-scrollbar {
     width: 12px;   
   }
@@ -179,7 +212,6 @@ footer{
     
   }
   
-
   ::-webkit-scrollbar-thumb {
     background: #888; 
     border-radius: 10px;
@@ -189,8 +221,6 @@ footer{
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
-
-
 
 
   @keyframes gradient-animation {
@@ -211,6 +241,25 @@ footer{
     justify-content: center;
     padding-top: 60px;
    } 
+
+   .project_view{
+    width: 100%;
+    height: 100%;
+  }
+
+  #hello_name{
+    font-size: 4rem;
+  }
+
+  .projects_grid{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+
+   
   }
 
   @media (max-height: 750px) {
