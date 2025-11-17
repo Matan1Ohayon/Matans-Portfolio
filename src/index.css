@@ -15,7 +15,7 @@ html, body {
   background: linear-gradient(300deg, #e696ce, #c4d3e5, #8cb0ce);
   background-size: 180% 180%;
   animation: gradient-animation 15s ease infinite;
-  background-attachment: fixed; 
+  background-attachment: scroll; 
 }
 
 
@@ -42,6 +42,9 @@ html, body {
 .main-navbar {
   position: sticky;
   top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   z-index: 1000;
   background: #f9fdfaee;
   opacity: 90%; 
@@ -79,7 +82,14 @@ html, body {
 }
 
 @media (max-width: 750px) {
+  body {
+    padding-top: 72px;
+  }
   .main-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     height: auto;
     padding: 14px 0;
   }
@@ -209,7 +219,6 @@ html, body {
 
 .about-title.reveal { transition-delay: 150ms; }
 .about-d.reveal     { transition-delay: 500ms; }
-strong.reveal       { transition-delay: 500ms; }
 
 .about-title {
   font-size: clamp(32px, 5vw, 52px);
@@ -493,18 +502,13 @@ strong.reveal       { transition-delay: 500ms; }
   margin: 0 auto 1rem; 
 }
 
+
+
 .projects-header h2 {
   font-size: clamp(32px, 5vw, 52px);
   font-weight: 800;
   letter-spacing: 1px;
   margin-bottom: 4px; 
-}
-
-.projects-header p {
-  font-size: clamp(16px, 2vw, 18px);
-  line-height: 1.7;
-  opacity: 0.75;
-  margin: 0;
 }
 
 .projects-grid {

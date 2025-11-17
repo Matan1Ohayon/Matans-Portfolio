@@ -11,8 +11,8 @@ function Footer() {
         Think I’d be a good match <br />
         for your project?
         </h3>
+        <p>Let's Talk!</p>
       </div>
-        <p className="footer-title reveal left" >Let's Talk!</p>
         <div className="reveal up">
             <LinksCard />
         </div>
