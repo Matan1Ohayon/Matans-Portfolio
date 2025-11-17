@@ -23,8 +23,8 @@ function ProjectsSection() {
 
     return (
         <section id="projects" className="projects-section">
-          <div className="projects-header">
-            <h2 className="reveal up">Projects</h2>
+          <div className="projects-header reveal up">
+            <h2>Projects</h2>
           </div>
           <div className="projects-grid">
             {projects.map((project, index) => (
