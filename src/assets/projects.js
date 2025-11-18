@@ -41,7 +41,7 @@ const projects = [
     id: 3,
     title: "Multi-Client Chat Application",
     sec_title: "C++ socket-based multi-client chat over TCP/IP",
-    btn_title: "View More",
+    btn_title: "View Git",
     link: "https://github.com/Matan1Ohayon/Multi-Client-Chat-Application",
     src: "projects_img/server-client-gif1.gif",
     description:
