@@ -31,10 +31,10 @@ html, body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   html, body {
     animation: none;        
-    background-size: cover;   
+    background-position: center;
   }
 }
 
@@ -81,16 +81,16 @@ html, body {
   background: #f9f2f7;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   body {
-    padding-top: 72px;
+    padding: 10px;
   }
   .main-navbar {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height: auto;
+    height: 72px;
     padding: 14px 0;
   }
   .navbar-links {
@@ -134,6 +134,18 @@ html, body {
   border-radius: 50%;
   border: 3px solid #e6e6e6;
   margin-bottom: 18px;
+}
+
+@media (max-width: 800px) { 
+  .hero-section{
+    margin-top: 20px;
+  }
+
+  .hero-img{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 0;
+  }
 }
 
 .hero-name {
@@ -519,7 +531,7 @@ html, body {
   margin: 0 auto;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .about-section,
   .projects-header {
     padding: 2rem 1.5rem;
@@ -603,7 +615,6 @@ html, body {
     padding: 6px 12px;
   }
 }
-
 /* footer */
 
 .page-footer {
@@ -639,5 +650,6 @@ html, body {
   box-sizing: border-box;
   border: none;
 }
+
 
 
