@@ -81,10 +81,10 @@ function PinedProjectCard({ project, direction }) {
                     <div className="project-btns">                 
                         <a
                             className="btn-primary"
-                            onClick={(e) => {
-                                e.stopPropagation();
-                                window.open("/spender-demo", "_blank");
-                            }}
+                            href={demoUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                            onClick={(e) => e.stopPropagation()}
                             >
                             {project.btn_title}
                         </a>
