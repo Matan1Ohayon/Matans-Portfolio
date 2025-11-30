@@ -79,9 +79,10 @@ function PinedProjectCard({ project, direction }) {
                             href={project.link}
                             target="_blank"
                             rel="noreferrer"
-                            // onClick={(e) => {
-                            //     navigate("/spender-demo"); // מעבר לדף הנחיתה
-                            // }}                          
+                            onClick={(e) => {
+                                e.preventDefault();
+                                navigate("/spender-demo"); 
+                            }}                          
                             >
                             {project.btn_title}
                         </a>   
