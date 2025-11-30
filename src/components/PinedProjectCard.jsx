@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 
 function PinedProjectCard({ project, direction }) {
@@ -7,6 +7,14 @@ function PinedProjectCard({ project, direction }) {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     const navigate = useNavigate();
+
+    // Get full URL for Vercel compatibility
+    const demoUrl = useMemo(() => {
+        if (typeof window !== 'undefined') {
+            return window.location.origin + "/spender-demo";
+        }
+        return "/spender-demo";
+    }, []);
 
   
     useEffect(() => {
@@ -76,13 +84,10 @@ function PinedProjectCard({ project, direction }) {
                     <div className="project-btns">                 
                         <a
                             className="btn-primary"
-                            href={project.link}
+                            href={demoUrl}
                             target="_blank"
                             rel="noreferrer"
-                            onClick={(e) => {
-                                e.preventDefault();
-                                navigate("/spender-demo"); 
-                            }}                          
+                            onClick={(e) => e.stopPropagation()}                          
                             >
                             {project.btn_title}
                         </a>   
