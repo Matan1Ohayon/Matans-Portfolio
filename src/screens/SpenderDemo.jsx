@@ -69,6 +69,9 @@ export default function SpenderDemo() {
                 autoPlay
                 loop
                 muted
+                controls
+                playsInline
+                preload="auto"
                 src="/projects_img/spender_page/spender-video.mp4"
                 style={styles.heroVideo}
             />
