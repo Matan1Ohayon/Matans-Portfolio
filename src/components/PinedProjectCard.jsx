@@ -8,7 +8,6 @@ function PinedProjectCard({ project, direction }) {
 
     const navigate = useNavigate();
 
-    // Get full URL for Vercel compatibility
     const demoUrl = useMemo(() => {
         if (typeof window !== 'undefined') {
             return window.location.origin + "/spender-demo";
@@ -35,7 +34,6 @@ function PinedProjectCard({ project, direction }) {
       return () => window.removeEventListener("resize", handleResize);
     }, []);
 
-    // Generate image paths - assuming spender project has multiple screens
     const getImages = () => {
       if (project.images && Array.isArray(project.images)) {
         return project.images;
@@ -57,7 +55,6 @@ function PinedProjectCard({ project, direction }) {
 
     const images = getImages();
     
-    // Determine how many images to show based on screen size
     const getImageCount = () => {
       if (windowWidth < 900) return 1; // Different layout for small screens
       if (windowWidth < 1200) return 3;
@@ -84,13 +81,13 @@ function PinedProjectCard({ project, direction }) {
                     <div className="project-btns">                 
                         <a
                             className="btn-primary"
-                            href={demoUrl}
-                            target="_blank"
-                            rel="noreferrer"
-                            onClick={(e) => e.stopPropagation()}                          
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                window.open("/spender-demo", "_blank");
+                            }}
                             >
                             {project.btn_title}
-                        </a>   
+                        </a>
                     </div>
                     <p className="pined-project-description">{project.description}</p>
                     <div className="project-unit-tech">

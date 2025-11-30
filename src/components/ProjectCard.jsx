@@ -40,12 +40,25 @@ function ProjectCard({ project, direction }) {
                         
                             <a
                                 className="btn-primary"
-                                href={project.link}
-                                target="_blank"
+                                href={project.link === "/spender-demo" ? "#" : project.link}
+                                target={project.link === "/spender-demo" ? "_self" : "_blank"}
                                 rel="noreferrer"
-                                onClick={(e) => e.stopPropagation()}                             >
+                                onClick={(e) => {
+                                    e.stopPropagation();
+
+                                    // Special rule for SPENDER PAGE
+                                    if (project.link === "/spender-demo") {
+                                        e.preventDefault();
+                                        window.open("/spender-demo", "_blank");
+                                        return;
+                                    }
+
+                                    // Otherwise behave normally
+                                }}
+                            >
                                 {project.btn_title}
                             </a>
+
                             
                             <a
                                 type="button"
