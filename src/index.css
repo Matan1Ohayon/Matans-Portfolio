@@ -298,6 +298,159 @@ html, body {
     transform: none !important;
   }
 }
+/* pined project card */
+
+
+.pined-project-image{
+  display: flex;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.pined-project-image-grid {
+  overflow: visible;
+}
+
+.pined-project-image-small {
+  overflow: hidden;
+}
+
+.pined-project-main-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.pined-project-images-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  gap: 0;
+  padding: 20px;
+  overflow: visible;
+}
+
+.pined-project-sub-image-wrapper {
+  position: relative;
+  transition: transform 0.3s ease, z-index 0.3s ease;
+  margin-left: -40px; /* Overlap between images */
+}
+
+.pined-project-sub-image-wrapper:first-child {
+  margin-left: 0; /* First image has no negative margin */
+}
+
+.pined-project-sub-image-wrapper:hover {
+  z-index: 100 !important;
+  transform: translateY(-10px) scale(1.05);
+}
+
+.pined-project-sub-image {
+  width: 220px;
+  height: auto;
+  max-height: 420px;
+  object-fit: contain;
+  display: block;
+  border-radius: 4px;
+}
+
+/* Responsive adjustments for different screen sizes */
+@media (min-width: 1600px) {
+  /* Large screens - 5 images */
+  .pined-project-sub-image {
+    width: 200px;
+    max-height: 400px;
+  }
+  .pined-project-sub-image-wrapper {
+    margin-left: -45px;
+  }
+  .pined-project-images-container {
+    min-height: 500px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+  /* Medium-large screens - 4 images */
+  .pined-project-sub-image {
+    width: 190px;
+    max-height: 380px;
+  }
+  .pined-project-sub-image-wrapper {
+    margin-left: -45px;
+  }
+  .pined-project-images-container {
+    min-height: 480px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  /* Medium screens - 3 images */
+  .pined-project-sub-image {
+    width: 180px;
+    max-height: 360px;
+  }
+  .pined-project-sub-image-wrapper {
+    margin-left: -40px;
+  }
+  .pined-project-images-container {
+    min-height: 460px;
+  }
+}
+
+@media (max-width: 900px) {
+  /* Small screens - single image layout */
+  .pined-project-image {
+    margin-left: 0;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .pined-project-main-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  .pined-project-unit-face {
+    flex-direction: column;
+  }
+  
+  .pined-project-images-container {
+    display: none;
+  }
+}
+
+.pined-project-unit-face {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding: 20px 20px 0 20px;
+}
+
+.pined-project-description {
+  text-align: center;
+  width: 70%;
+  max-width: 100%;
+  padding-top: 30px;
+  line-height: 1.6;
+}
+
+.pined-project-unit-face .project-content {
+  width: 100%;
+  max-width: 100%;
+  align-items: center;
+}
+
 
 /* project card */
 
@@ -314,7 +467,6 @@ html, body {
   transition: opacity 0.6s ease, transform 0.6s ease;
   cursor: pointer;
 }
-
 .project-unit.from-left {
   transform: translate(-30px, 30px);
 }
@@ -531,6 +683,34 @@ html, body {
   margin: 0 auto;
 }
 
+/* pinned project – spans width of two cards while keeping side padding */
+.pined-project {
+  max-width: 98%;
+  margin: 0 auto 8px;
+}
+
+.pined-project .project-unit {
+  height: 100%;
+  min-height: 520px;
+}
+
+.pined-project .project-image {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pined-project .project-image video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 @media (max-width: 800px) {
   .about-section,
   .projects-header {
@@ -552,6 +732,16 @@ html, body {
     max-width: 100%;
     padding: 0 1rem;
     margin: 0 auto;
+  }
+
+  .pined-project {
+    max-width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto 12px;
+  }
+
+  .pined-project .project-unit {
+    min-height: 400px;
   }
 
   .project-unit {

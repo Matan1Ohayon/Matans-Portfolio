@@ -1,5 +1,23 @@
 const projects = [
   {
+    id: 0,
+    title: "Spender - Smart Finance App",
+    sec_title: "A personal finance app with real-time insights",
+    btn_title: "Download",
+    link: "/spender-demo",
+    src: "/projects_img/spender-app-screens.gif",
+    description:
+      "A full personal finance mobile application built with React Native and Expo, designed to help users track expenses effortlessly. Swipe-based interactions, weekly insights, trend detection, profile editing, and Firebase cloud integration - all wrapped in a smooth, modern UX/UI optimized for both iOS and Android.",
+    badges: [
+      "React Native",
+      "TypeScript",
+      "Firebase",
+      "Expo",
+      "Mobile App",
+      "UX/UI",
+    ],
+  },  
+  {
     id: 1,
     title: "Yotam Dahan's Portfolio",
     sec_title: "A modern interactive portfolio website",
