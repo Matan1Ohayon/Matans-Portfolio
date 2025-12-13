@@ -2,9 +2,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import AboutMe from "./components/AboutMe";
-import ProjectsSection from "./components/ProjectsSection";
 import Footer from "./components/Footer";
 import SpenderDemo from "./screens/SpenderDemo";
+
+import ProjectGallery from "./components/ProjectGallery/ProjectGallery";
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
             <Navbar />
             <HeroSection />
             <AboutMe />
-            <ProjectsSection />
+            <ProjectGallery />
             <Footer />
           </div>
         } />
