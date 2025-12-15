@@ -120,7 +120,7 @@ const projectsData = [
     date: "Dec 10, 2025",
     link: "https://github.com/Matan1Ohayon/PrivacyShield/releases/download/v1.0.0/PrivacyShield.zip", 
     mediaType: "video",
-    src: "/projects_img/privacy-shield-demo.mp4",
+    src: "/projects_img/PrivacyShield-demo-720p.mp4",
     description:
       "A desktop security app designed to prevent 'shoulder surfing' using real-time AI. It continuously verifies identity and instantly blurs the screen if an intruder is detected or the user steps away. Built with a hybrid Python (PyQt6) and React architecture.",
     badges: [

@@ -16,7 +16,12 @@ const ProjectDesCard = ({ project, isOpen, onClose }) => {
         
         <div className="modal-media-container">
           {project.mediaType === 'video' ? (
-            <video src={project.src} controls autoPlay />
+            <video 
+              src={project.src} 
+              controls               
+              preload="metadata"
+              className="video-element"
+            />
           ) : (
             <img src={project.src} alt={project.title} />
           )}

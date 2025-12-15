@@ -40,7 +40,7 @@ const ProjectGallery = () => {
                 </div>
             </div>
 
-            <motion.div layout className="gallery-grid">
+            <motion.div className="gallery-grid">
                 <AnimatePresence>
                     {filteredProjects.map((project) => (
                         <motion.div

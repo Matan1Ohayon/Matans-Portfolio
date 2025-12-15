@@ -6,9 +6,17 @@ const ProjectViewCard = ({ project, onClick }) => {
     <div className="project-card" onClick={() => onClick(project)}>
       <div className="card-media">
         {project.mediaType === 'video' ? (
-          <video src={project.src} muted loop autoPlay playsInline />
+          <video 
+            src={project.src} 
+            muted 
+            loop 
+            autoPlay 
+            playsInline 
+            preload="metadata" 
+            className="video-element" 
+          />
         ) : (
-          <img src={project.src} alt={project.title} loading="lazy" />
+          <img src={project.src} alt={project.title} />
         )}
       </div>
       

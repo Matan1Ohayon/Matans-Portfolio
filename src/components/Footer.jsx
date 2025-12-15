@@ -9,7 +9,7 @@ function Footer() {
       <div className="footer-title reveal up">
         <h3>
         Think I’d be a good match <br />
-        for your project?
+        for your company?
         </h3>
         <p>Let's Talk!</p>
       </div>
