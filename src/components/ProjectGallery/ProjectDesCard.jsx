@@ -17,10 +17,15 @@ const ProjectDesCard = ({ project, isOpen, onClose }) => {
         <div className="modal-media-container">
           {project.mediaType === 'video' ? (
             <video 
+              key={project.src} 
               src={project.src} 
               controls               
-              preload="metadata"
-              className="video-element"
+              loop
+              muted={false}           
+              playsInline
+              preload="auto"     
+              className="modal-video"
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
           ) : (
             <img src={project.src} alt={project.title} />
@@ -40,6 +45,7 @@ const ProjectDesCard = ({ project, isOpen, onClose }) => {
               ))}
             </div>
           )}
+          
           {project.link && (
             <a 
               href={project.link} 
