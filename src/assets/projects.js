@@ -136,7 +136,7 @@ const projectsData = [
     id: 6,
     title: "Fufi'zzz - Brand Landing Page",
     category: "Web Development",
-    isPinned: true,
+    isPinned: false,
     sec_title: "Interactive preparation instructions & brand experience",
     btn_title: "View Site",
     date: "Jan 4, 2026",
