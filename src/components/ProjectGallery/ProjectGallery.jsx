@@ -15,6 +15,13 @@ const ProjectGallery = () => {
     const filteredProjects = activeCategory === "All" 
         ? reverseProjects 
         : reverseProjects.filter(project => project.category === activeCategory);
+    
+    // Sort: pinned projects first, then the rest
+    const sortedProjects = [...filteredProjects].sort((a, b) => {
+        if (a.isPinned && !b.isPinned) return -1;
+        if (!a.isPinned && b.isPinned) return 1;
+        return 0;
+    });
 
     return (
         <section className="gallery-container">
@@ -37,7 +44,7 @@ const ProjectGallery = () => {
             </div>
 
             <div className="gallery-grid">
-                {filteredProjects.map((project) => {
+                {sortedProjects.map((project) => {
                     const CardComponent = project.isPinned ? PinedProjectViewCard : ProjectViewCard;
                     
                     return (
