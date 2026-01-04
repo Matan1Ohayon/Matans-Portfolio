@@ -132,6 +132,28 @@ const projectsData = [
       "Desktop App",
     ],
   },
+  {
+    id: 6,
+    title: "Fufi'zzz - Brand Landing Page",
+    category: "Web Development",
+    isPinned: true,
+    sec_title: "Interactive preparation instructions & brand experience",
+    btn_title: "View Site",
+    date: "Jan 4, 2026",
+    link: "https://fufizzz.yotam-dahan.com/", 
+    mediaType: "img", 
+    src: "/projects_img/fufizzz.gif",
+    description:
+      "A high-performance, modern landing page designed for a boutique cookie business. Features a responsive UI, seamless order flow integration, and optimized delivery for high conversion rates. Built with a focus on speed and visual appeal using Vite and React.",
+    badges: [
+      "React + Vite",
+      "HTML",
+      "JavaScript",
+      "CSS",
+      "Frontend",
+      "UX/UI Design",
+    ],
+  },
 ];
 
 export default projectsData;
