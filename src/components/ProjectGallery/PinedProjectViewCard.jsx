@@ -56,7 +56,7 @@ const PinedProjectViewCard = ({ project, onClick }) => {
       </div>
       
       <div className="card-content">
-        <span className="card-category">{project.category} • {project.date}</span>
+        <span className="card-category">{Array.isArray(project.category) ? project.category.join(' · ') : project.category} • {project.date}</span>
         <h3 className="card-title">{project.title}</h3>
         <p className="card-desc">{project.shortDesc}</p>
       </div>

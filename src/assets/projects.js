@@ -113,7 +113,7 @@ const projectsData = [
   {
     id: 5,
     title: "PrivacyShield - AI Security",
-    category: "AI & Machine Learning",
+    category: ["AI & Machine Learning","System Programming"],
     isPinned: true,
     sec_title: "Biometric anti-shoulder surfing protection",
     btn_title: "Download",
@@ -154,6 +154,28 @@ const projectsData = [
       "UX/UI Design",
     ],
   },
+  {
+    id: 7,
+    title: "GitWhiz - AI Code Review Assistant",
+    category: ["Web Development", "AI & Machine Learning"],
+    isPinned: false,
+    sec_title: "AI-powered GitHub repository analysis and chat",
+    btn_title: "View Site",
+    date: "Mar 1, 2026",
+    link: "https://gitwhiz.vercel.app/",
+    mediaType: "video",
+    src: "/projects_img/gitwhiz-demo.mp4",
+    description:
+      "An intelligent platform that transforms how developers interact with GitHub repositories. GitWhiz analyzes repository architecture, codebase structure, and provides an interactive AI chatbot for asking questions about any public repo. Simply paste a GitHub URL to get instant insights - understand project architecture, explore code patterns, ask specific questions about implementation, and get intelligent answers powered by AI. Perfect for quickly onboarding to new projects, conducting code reviews, or understanding unfamiliar codebases.",
+    badges: [
+      "React",
+      "AI / LLM Integration",
+      "GitHub API",
+      "Vercel",
+      "Frontend",
+      "Developer Tools",
+    ],
+  }
 ];
 
 export default projectsData;
