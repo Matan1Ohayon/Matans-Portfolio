@@ -14,7 +14,11 @@ const ProjectGallery = () => {
     
     const filteredProjects = activeCategory === "All" 
         ? reverseProjects 
-        : reverseProjects.filter(project => project.category === activeCategory);
+        : reverseProjects.filter(project => 
+            Array.isArray(project.category)
+                ? project.category.includes(activeCategory)
+                : project.category === activeCategory
+        );
     
     // Sort: pinned projects first, then the rest
     const sortedProjects = [...filteredProjects].sort((a, b) => {
