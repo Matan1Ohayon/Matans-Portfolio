@@ -1,39 +1,55 @@
 ### 🌐 Matan Ohayon - Personal Portfolio
-A modern, fully responsive portfolio website built with **React + Vite**, showcasing my projects, skills, and personal story.  
-The site includes smooth animations, interactive project cards, and a clean UI - all crafted from scratch.
+A modern, fully responsive portfolio website built with **React + Vite**, showcasing my projects, skills, and experience.  
+Features immersive 3D visuals, physics-based interactions, smooth animations, and a polished UI — all crafted from scratch.
+
+🔗 **Live Site:** [matans-portfolio.vercel.app](https://matans-portfolio.vercel.app/)
 
 ---
 
 ### ✨ Features
-- 📱 **Responsive Design** - optimized for desktop & mobile  
-- 🎞️ **Custom Animations** - scroll effects, transitions, hover interactions  
-- 🗂️ **Project Gallery** - interactive cards with GIF previews  
-- ⚡ **High Performance** - powered by Vite  
-- 🎨 **Clean UI** - handcrafted CSS and layout  
-- 🔄 **Auto Deployment** - Vercel triggers a build on every push  
-- 🌍 **Multilingual Ready** - structure supports Hebrew/English  
+- 📱 **Responsive Design** — optimized for desktop & mobile  
+- 🌌 **3D Floating Orbs** — interactive Three.js scene in the hero section  
+- 🎯 **Interactive Skills Section** — drag, toss, and swipe physics-powered skill balls (Matter.js)  
+- 🗂️ **Project Gallery** — bento-style cards with category filtering and modal previews  
+- 🎞️ **Smooth Animations** — scroll effects, transitions, and hover interactions (Framer Motion + GSAP)  
+- 🖱️ **Custom Cursor** — dynamic cursor that reacts to interactive elements  
+- 🧈 **Smooth Scrolling** — buttery scroll experience powered by Lenis  
+- ⚡ **High Performance** — powered by Vite with Tailwind CSS  
+- 🔄 **Auto Deployment** — Vercel triggers a build on every push  
 
 ---
 
 ### 🛠️ Tech Stack
 
 #### 🔧 Frontend
-- React  
-- Vite  
+- React 19  
+- Vite 7  
 - JavaScript (ES6+)  
-- CSS3  
+- Tailwind CSS 4  
+
+#### 🎨 Animation & 3D
+- Three.js + React Three Fiber  
+- Framer Motion  
+- GSAP  
+- Matter.js  
+- Lenis (smooth scroll)  
 
 #### 🚀 Deployment & Tools
 - Vercel  
 - Git & GitHub  
-- AI-generated graphics for project visuals  
 
 ---
 
 ### 📸 Screenshots
-<img width="1916" height="857" alt="image" src="https://github.com/user-attachments/assets/d4478525-8fce-40f6-8020-ac16e60f8d09" />
-<img width="1915" height="781" alt="image" src="https://github.com/user-attachments/assets/687c0b2c-0654-43ce-89c4-1ec96a763bff" />
 
+**Hero Section**
+<img alt="Hero Section" src="screenshots/hero.png" />
+
+**Selected Works**
+<img alt="Project Gallery" src="screenshots/projects.png" />
+
+**Interactive Skills**
+<img alt="Skills Section" src="screenshots/skills.png" />
 
 ---
 
@@ -41,8 +57,8 @@ The site includes smooth animations, interactive project cards, and a clean UI -
 
 Clone the repository:
 ```bash
-git clone https://github.com/Matan1Ohayon/<repository-name>.git
-cd <repository-name>
+git clone https://github.com/Matan1Ohayon/Matans-Portfolio.git
+cd Matans-Portfolio
 ```
 Install dependencies:
 ```bash
@@ -66,7 +82,7 @@ Every push to the main branch automatically triggers a production deployment.
 ---
 
 ### 📬 Contact
+
 - 🌐 Portfolio: https://matans-portfolio.vercel.app/ 
 - 💼 LinkedIn: www.linkedin.com/in/matan-ohayon-4101b6276
 - 📧 Email: matan1ohayon@gmail.com  
-
