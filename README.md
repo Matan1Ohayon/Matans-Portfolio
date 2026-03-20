@@ -69,3 +69,4 @@ Every push to the main branch automatically triggers a production deployment.
 - 🌐 Portfolio: https://matans-portfolio.vercel.app/ 
 - 💼 LinkedIn: www.linkedin.com/in/matan-ohayon-4101b6276
 - 📧 Email: matan1ohayon@gmail.com  
+
