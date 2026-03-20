@@ -372,7 +372,6 @@ function Skills() {
         `;
 
         const hint = document.createElement("span");
-        hint.textContent = "Requires HTTPS";
         hint.style.cssText = `font-size: 10px; color: rgba(255,255,255,0.3); padding-right: 4px;`;
 
         wrap.appendChild(btn);
@@ -462,7 +461,7 @@ function Skills() {
           style={{ fontFamily: "'Space Grotesk', sans-serif" }}
         >
           Technologies I{" "}
-          <span className="gradient-text">work with</span>
+          <span className="gradient-text">play with</span>
         </h2>
         <p className="text-sm mb-10" style={{ color: "#555" }}>
           <span className="hidden md:inline">Drag, toss, or swipe the balls around.</span>
