@@ -1,29 +1,23 @@
-import LinksCard from "./LinksCard";
-
 function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <>
-    <footer id="footer" className="page-footer">
-      <div className="footer-title reveal up">
-        <h3>
-        Think I’d be a good match <br />
-        for your company?
-        </h3>
-        <p>Let's Talk!</p>
-      </div>
-        <div className="reveal up">
-            <LinksCard />
-        </div>
-        
+    <footer className="relative z-10 w-full py-8 text-center">
+      {/* Gradient line */}
+      <div
+        className="w-full h-px mb-8"
+        style={{ background: "linear-gradient(90deg, transparent, #00d9ff33, #ff006e33, transparent)" }}
+      />
+
+      <p className="text-xs tracking-widest uppercase" style={{ color: "#444" }}>
+        Designed &amp; Built by{" "}
+        <span style={{ color: "#888" }}>Matan Ohayon</span>
+      </p>
+      <p className="text-[10px] mt-2" style={{ color: "#333" }}>
+        &copy; {year} &middot; All Rights Reserved
+      </p>
     </footer>
-    <footer className="footer-bottom">
-      All Rights Reserved | Matan Ohayon © {year}
-    </footer>
-  </>
   );
-  }
-  
-  export default Footer;
-  
+}
+
+export default Footer;

@@ -96,7 +96,7 @@ const projectsData = [
     sec_title: "A personal finance app with real-time insights",
     btn_title: "Download",
     date: "Nov 17, 2025",
-    link: "/spender-demo",
+    link: "spender-demo",
     mediaType: "img",
     src: "/projects_img/spender-app-screens.gif",
     description:
