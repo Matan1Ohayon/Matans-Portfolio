@@ -53,7 +53,7 @@ function HeroSection() {
               background: "rgba(0, 217, 255, 0.05)",
             }}
           >
-            Full Stack Developer &middot; Software Developer
+            Software Engineer &middot; Full Stack Developer
           </span>
         </div>
 
@@ -87,7 +87,7 @@ function HeroSection() {
           style={{ color: "#999" }}
         >
           Building AI-powered products & crafting exceptional digital experiences. 
-          <br /> Currently Founding Full-Stack Developer at{" "}
+          <br /> Currently Founding Software Engineer at{" "}
           <span className="text-cyan font-medium">Parry.io</span>
         </p>
 
