@@ -57,12 +57,14 @@ function AboutMe() {
             </h2>
 
             <p className="about-reveal text-base leading-relaxed mb-4" style={{ color: "#999" }}>
-              I&apos;m a third-year Computer Science student at SCE with a{" "}
+              I hold a bachelor&apos;s degree in Computer Science from SCE with a{" "}
               <span className="text-white font-medium">94 GPA</span> and a spot on the{" "}
               <span className="text-white font-medium">Dean&apos;s List</span>. 
-              <br />Currently working as a Founding Software Engineer at{" "}
-              <span className="text-cyan font-medium">Parry.io</span>, building
-              an AI-powered contract intelligence platform for procurement departments.
+              <br />Currently working as a Full Stack Developer at{" "}
+              <a href="https://www.sela.co.il/" target="_blank" rel="noreferrer" className="text-cyan font-medium">Sela Cloud</a>
+              {" "}since June 2026. Previously, I worked as a Founding Software Engineer
+              at Parry.io in a student position, building an AI-powered contract
+              intelligence platform for procurement departments.
             </p>
 
             <p className="about-reveal text-base leading-relaxed mb-8" style={{ color: "#666" }}>

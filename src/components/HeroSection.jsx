@@ -87,8 +87,8 @@ function HeroSection() {
           style={{ color: "#999" }}
         >
           Building AI-powered products & crafting exceptional digital experiences. 
-          <br /> Currently Founding Software Engineer at{" "}
-          <span className="text-cyan font-medium">Parry.io</span>
+          <br /> Currently Full Stack Developer at{" "}
+          <a href="https://www.sela.co.il/" target="_blank" rel="noreferrer" className="text-cyan font-medium">Sela Cloud</a>
         </p>
 
         {/* CTA Buttons */}
